@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 export const ContentWrapper = styled.main`
-  grid-column: 4 / span 8;
-  grid-row: 3 / span 5;
-  background-color: ${props => props.theme.colors.light2};
+  grid-column: 2 / span 10;
+  grid-row: 2 / span 5;
+  background-color: ${props => props.theme.colors.light1};
   padding: ${props =>
     `${props.theme.spacings.xLarge} ${props.theme.spacings.xxLarge}`};
   box-shadow: ${props => props.theme.shadows.shadow1};
@@ -18,3 +18,5 @@ export const ContentWrapper = styled.main`
       `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
   }
 `
+
+//Huvudinfo

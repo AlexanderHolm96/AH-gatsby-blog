@@ -3,6 +3,7 @@ import { Container, FeatureImage, Content } from "../components"
 
 const index = () => {
   return (
+    
     <Container>
       <FeatureImage />
       <Content />
