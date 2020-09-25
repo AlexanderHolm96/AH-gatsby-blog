@@ -8,7 +8,7 @@ const Ul = styled.ul`
   li {
     padding: 18px 10px;
   }
-  @media (max-width: 768px) {
+  @media ${props => props.theme.breakpoints.tablet} {
     flex-flow: column nowrap;
     background-color: #0D2538;
     position: fixed;

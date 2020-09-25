@@ -10,15 +10,15 @@ export const NavWrapper = styled.nav`
   height: 100px;
   font-size: xx-large;
   text-decoration: underline;
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 2px solid ${props => props.theme.colors.light1};
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  color: ${props => props.theme.colors.light1};
 
   .logo {
     padding: 15px 0;
-    color: red;
-    font-size: xx-large;
+    color: ${props => props.theme.colors.main1};
   }
 
   align-items: center;

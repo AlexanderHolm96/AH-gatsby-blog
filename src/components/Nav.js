@@ -13,7 +13,7 @@ export const Nav = () => {
   return (
     <NavWrapper>
       <div className="logo">
-        NavBar
+        My Blog!
       </div>
       <Burger />
     </NavWrapper>
