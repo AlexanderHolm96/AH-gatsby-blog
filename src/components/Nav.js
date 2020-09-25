@@ -11,7 +11,7 @@ export const Nav = () => {
   return (
     <NavWrapper>
 
-      <a href="http://localhost:8000" className="logo">
+      <a href="/" className="logo">
       <div>
       My Blog!
     </div>
