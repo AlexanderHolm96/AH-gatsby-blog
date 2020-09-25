@@ -14,9 +14,10 @@ export const ContentWrapper = styled.main`
   }
 
   @media ${props => props.theme.breakpoints.mobile} {
+    grid-column: 1 / span 8;
     padding: ${props =>
       `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
   }
 `
 
-//Huvudinfo
+

@@ -1,6 +1,4 @@
 import React from "react"
-import styled from "styled-components"
-//import { useStaticQuery, Link, graphql } from "gatsby"
 import { NavWrapper } from "../elements"
 import Burger from "./Burger"
 
@@ -12,9 +10,12 @@ export const Nav = () => {
 
   return (
     <NavWrapper>
-      <div className="logo">
-        My Blog!
-      </div>
+
+      <a href="http://localhost:8000" className="logo">
+      <div>
+      My Blog!
+    </div>
+    </a>
       <Burger />
     </NavWrapper>
   )

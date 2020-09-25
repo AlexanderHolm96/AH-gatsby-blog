@@ -5,7 +5,7 @@ export const NavWrapper = styled.nav`
   grid-row: 1 / 2;
   display: flex;
   z-index: 15;
-
+  cursor: pointer;
   width: 100%;
   height: 100px;
   font-size: xx-large;
@@ -17,8 +17,9 @@ export const NavWrapper = styled.nav`
   color: ${props => props.theme.colors.light1};
 
   .logo {
+    all: unset;
     padding: 15px 0;
-    color: ${props => props.theme.colors.main1};
+    color: ${props => props.theme.colors.light1};
   }
 
   align-items: center;
@@ -31,4 +32,4 @@ export const NavWrapper = styled.nav`
     grid-column: 2 / span 6;
   }
 `
-//Logga
+

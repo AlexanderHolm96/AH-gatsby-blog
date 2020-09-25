@@ -7,10 +7,14 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   li {
     padding: 18px 10px;
+    color: ${props => props.theme.colors.light1};
   }
+  a{
+        color: ${props => props.theme.colors.light1};
+    }
   @media ${props => props.theme.breakpoints.tablet} {
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background-color: ${props => props.theme.colors.dark1};
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -19,20 +23,18 @@ const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-    li {
-      color: #fff;
-    }
   }
 `;
 
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <li>Sign In</li>
-      <li>Sign Up</li>
+     
+      <li><a href="/">Home</a></li>
+      <li><a href="/">About Us</a></li>
+      <li><a href="/">Contact Us</a></li>
+      <li><a href="/">Sign In</a></li>
+      <li><a href="/">Sign Up</a></li>
     </Ul>
   )
 }

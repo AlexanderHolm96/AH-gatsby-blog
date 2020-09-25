@@ -7,4 +7,3 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `
-//Varje bloginlägg i main

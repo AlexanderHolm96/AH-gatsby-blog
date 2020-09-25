@@ -15,10 +15,12 @@ const StyledBurger = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
   }
+
+  /* This will transform the styled div when it close and opens*/
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#ccc' : '#333'};
+    background-color: ${({ open }) => open ? 'gray' : 'white'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -39,8 +41,9 @@ const Burger = () => {
   const [open, setOpen] = useState(false)
   
   return (
+      
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger BurgerWrapper open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />

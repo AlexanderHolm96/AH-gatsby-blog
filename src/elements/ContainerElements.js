@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const ContainerWrapper = styled.div`
-  background-color: ${props => props.theme.colors.dark2};
+  background-color: ${props => props.theme.colors.main2};
   height: 100%;
   display: grid;
   grid-template-columns: 1fr repeat(10, minmax(auto, 7rem)) 1fr;
@@ -17,4 +17,3 @@ export const ContainerWrapper = styled.div`
     grid-template-columns: 1rem repeat(6, 1fr) 1rem;
   }
 `
-//Huvuddesign
